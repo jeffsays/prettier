@@ -1,0 +1,20 @@
+# Prettier (formatter) configuration
+---
+arrowParens: always
+bracketSameLine: false
+bracketSpacing: true
+endOfLine: lf
+insertPragma: false
+printWidth: 120
+proseWrap: always
+quoteProps: as-needed
+requirePragma: false
+semi: true
+singleQuote: false
+tabWidth: 2
+trailingComma: es5
+useTabs: false
+overrides:
+  - files: ".prettierrc"
+    options:
+      parser: yaml

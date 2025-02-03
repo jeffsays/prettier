@@ -1,0 +1,30 @@
+{
+  "name": "@jeffsays/prettier",
+  "version": "0.0.0",
+  "description": "My personal Prettier config",
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffsays/prettier.git"
+  },
+  "author": "Jeff Beck",
+  "license": "MIT",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "homepage": "https://github.com/jeffsays/prettier",
+  "scripts": {
+    "format": "yarn run prettier --write .",
+    "publish": "yarn npm publish --access public",
+    "test": "yarn run prettier --list-different ."
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  },
+  "packageManager": "yarn@3.8.7",
+  "dependencies": {
+    "yaml": "^2.7.0"
+  }
+}

@@ -1,0 +1,30 @@
+name: ci/cd
+description: "check formatting"
+on:
+  push:
+  pull_request:
+jobs:
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Get yarn v3 cache directory
+        id: get-yarn-v3-cache
+        run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+        shell: bash
+      - name: Restore yarn cache directory
+        id: restore-yarn-cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.get-yarn-v3-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: yarn v3 install
+        run: yarn install --immutable
+        shell: bash
+      - name: list-different
+        run: yarn test
+        shell: bash
