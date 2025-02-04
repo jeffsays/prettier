@@ -18,3 +18,7 @@ overrides:
   - files: ".prettierrc"
     options:
       parser: yaml
+  - files: ".github/workflows/*.yml"
+    options:
+      parser: yaml
+      proseWrap: preserve
