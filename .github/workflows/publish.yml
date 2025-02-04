@@ -33,7 +33,9 @@ jobs:
         run: yarn install --immutable
         shell: bash
       - name: Publish
-        run: yarn npm publish --access public
+        run: |
+          yarn config set npmAuthToken ${{ secrets.NPMJS_PUBLISH_TOKEN }} --home
+          yarn npm publish --access public
       # $GITHUB_STEP_SUMMARY - success
       - name: Summary (packages/hybrid)
         if: success() && inputs.workspaces != 'true' && inputs.workspace == ''
