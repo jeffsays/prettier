@@ -1,3 +1,7 @@
 # Ignore build artifacts
 /dist/
+/lib/
+/var/
+
+# Ignore .yarn
 /.yarn/
