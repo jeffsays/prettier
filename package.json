@@ -2,11 +2,13 @@
   "name": "@jeffsays/prettier",
   "version": "0.0.0",
   "description": "My personal Prettier config",
-  "type": "module",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeffsays/prettier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeffsays/prettier/issues"
   },
   "author": "Jeff Beck",
   "license": "MIT",
@@ -16,15 +18,31 @@
   ],
   "homepage": "https://github.com/jeffsays/prettier",
   "scripts": {
-    "format": "yarn run prettier --write .",
+    "git:commit": "git add package.json .yarn/versions && git commit -m v${npm_package_version}",
+    "git:push": "git push --follow-tags",
+    "git:tag": "git tag -a v${npm_package_version} -m v${npm_package_version}",
+    "prettier:format": "yarn run prettier --write .",
+    "prettier:test": "yarn run prettier --list-different .",
     "publish": "yarn npm publish --access public",
-    "test": "yarn run prettier --list-different ."
+    "publish:major": "yarn version major && yarn publish:sync",
+    "publish:minor": "yarn version minor && yarn publish:sync",
+    "publish:patch": "yarn version patch && yarn publish:sync",
+    "publish:sync": "yarn run git:commit && yarn run git:tag && yarn git:push",
+    "version:patch": "yarn version --new-version patch",
+    "version:minor": "yarn version --new-version minor",
+    "version:major": "yarn version --new-version major",
+    "version:feature": "yarn version ${npm_package_version}-$0.$(git describe | rev | cut -d '-' -f 2 | rev).g$(git rev-parse --short HEAD)",
+    "version:prepatch": "yarn version --new-version prepatch",
+    "version:prerelease": "yarn version ${npm_package_version}"
   },
   "devDependencies": {
     "prettier": "^3.4.2"
   },
-  "packageManager": "yarn@3.8.7",
+  "peerDependencies": {
+    "prettier": ">=3.4.2"
+  },
   "dependencies": {
     "yaml": "^2.7.0"
-  }
+  },
+  "packageManager": "yarn@3.8.7"
 }

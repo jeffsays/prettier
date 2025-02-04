@@ -11,6 +11,8 @@ __metadata:
   dependencies:
     prettier: ^3.4.2
     yaml: ^2.7.0
+  peerDependencies:
+    prettier: ">=3.4.2"
   languageName: unknown
   linkType: soft
 

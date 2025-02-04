@@ -1,14 +1,13 @@
-name: Formatting
-description: "Check formatting"
+name: Publish
+description: "Publish to NPM"
 on:
   push:
-  pull_request:
-    types: [ opened, synchronize, reopened ]
-    branches-ignore:
-      - 'dependabot/**'
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+.[0-9]+'
 jobs:
   prettier:
-    name: Prettier
+    name: Publish
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -33,6 +32,9 @@ jobs:
       - name: yarn v3 install
         run: yarn install --immutable
         shell: bash
-      - name: list-different
-        run: yarn test
-        shell: bash
+      - name: Publish
+        run: yarn npm publish --access
+      # $GITHUB_STEP_SUMMARY - success
+      - name: Summary (packages/hybrid)
+        if: success() && inputs.workspaces != 'true' && inputs.workspace == ''
+        run: echo "### Published $(jq '.name' package.json) version $(jq .version package.json) to NPM" >> "$GITHUB_STEP_SUMMARY"
