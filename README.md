@@ -47,7 +47,6 @@ Add to package.json:
   },
   "prettier": "@jeffsays/prettier"
 }
-
 ```
 
 [code-style]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square

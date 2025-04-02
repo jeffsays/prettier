@@ -2,32 +2,29 @@
   "name": "@jeffsays/prettier",
   "version": "0.0.8",
   "description": "My personal Prettier config",
-  "main": "src/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeffsays/prettier.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jeffsays/prettier/issues"
-  },
-  "author": "Jeff Beck",
-  "license": "MIT",
-  "type": "module",
-  "engines": {
-    "node": ">=22.14.0"
-  },
-  "exports": {
-    ".": "./src/prettier.config.ts"
-  },
-  "files": [
-    "src/.prettierignore",
-    "src/prettier.config.ts"
-  ],
   "keywords": [
     "prettier",
     "prettier-config"
   ],
   "homepage": "https://github.com/jeffsays/prettier",
+  "bugs": {
+    "url": "https://github.com/jeffsays/prettier/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffsays/prettier.git"
+  },
+  "license": "MIT",
+  "author": "Jeff Beck",
+  "type": "module",
+  "exports": {
+    ".": "./src/prettier.config.ts"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src/.prettierignore",
+    "src/prettier.config.ts"
+  ],
   "scripts": {
     "git:commit": "git add package.json .yarn/versions && git commit -m v${npm_package_version}",
     "git:push": "git push --follow-tags",
@@ -40,27 +37,30 @@
     "publish:minor": "yarn version minor && yarn publish:sync",
     "publish:patch": "yarn version patch && yarn publish:sync",
     "publish:sync": "yarn run git:commit && yarn run git:tag && yarn git:push",
-    "version:patch": "yarn version --new-version patch",
-    "version:minor": "yarn version --new-version minor",
-    "version:major": "yarn version --new-version major",
     "version:feature": "yarn version ${npm_package_version}-$0.$(git describe | rev | cut -d '-' -f 2 | rev).g$(git rev-parse --short HEAD)",
+    "version:major": "yarn version --new-version major",
+    "version:minor": "yarn version --new-version minor",
+    "version:patch": "yarn version --new-version patch",
     "version:prepatch": "yarn version --new-version prepatch",
     "version:prerelease": "yarn version ${npm_package_version}"
-  },
-  "peerDependencies": {
-    "prettier": ">=3.5.3"
   },
   "dependencies": {
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.10",
     "yaml": "^2.7.0"
   },
-  "packageManager": "yarn@3.8.7",
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "prettier": ">=3.5.3"
+  },
+  "packageManager": "yarn@3.8.7",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

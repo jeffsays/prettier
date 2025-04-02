@@ -25,13 +25,11 @@ const config: Config = {
       files: ".github/workflows/*.yml",
       options: {
         parser: "yaml",
-        proseWrap: "preserve"
-      }
-    }
+        proseWrap: "preserve",
+      },
+    },
   ],
-  plugins: [
-    "prettier-plugin-packagejson"
-  ]
-}
+  plugins: ["prettier-plugin-packagejson"],
+};
 
 export default config;
