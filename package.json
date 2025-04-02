@@ -18,12 +18,15 @@
   "author": "Jeff Beck",
   "type": "module",
   "exports": {
-    ".": "./src/prettier.config.ts"
+    ".": "./src/prettier.config.ts",
+    "./braceStyle": "./src/braceStyle.plugin.ts",
+    "./experimentals": "./src/prettier.experimental.ts",
+    "./jsdoc": "./src/jsdoc.plugin.ts"
   },
-  "main": "src/index.js",
+  "main": "src/prettier.config.ts",
   "files": [
     "src/.prettierignore",
-    "src/prettier.config.ts"
+    "src/**/*.ts"
   ],
   "scripts": {
     "git:commit": "git add package.json .yarn/versions && git commit -m v${npm_package_version}",

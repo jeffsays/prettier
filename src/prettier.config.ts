@@ -1,20 +1,25 @@
 import { type Config } from "prettier";
+import jsdoc from "./jsdoc.plugin.ts";
+import braceStyle from "./braceStyle.plugin.ts";
+import experimentals from "./prettier.experimental.ts";
 
+/**
+ * @description
+ *
+ * Shared prettier configuration
+ *
+ * @type Config
+ */
 const config: Config = {
+  ...braceStyle,
+  ...experimentals,
+  ...jsdoc,
   arrowParens: "always",
-  braceStyle: "1tbs",
   bracketSameLine: false,
   bracketSpacing: true,
   editorconfig: true,
   endOfLine: "lf",
-  experimentalOperatorPosition: "start",
-  experimentalTernaries: true,
   insertPragma: false,
-  jsdocDescriptionTag: true,
-  jsdocVerticalAlignment: true,
-  jsdocSeparateReturnsFromParam: true,
-  jsdocPrintWidth: 100,
-  jsdocLineWrappingStyle: "greedy",
   objectWrap: "preserve",
   printWidth: 120,
   proseWrap: "always",
