@@ -49,8 +49,8 @@ Add to package.json:
     "something-else:format": "yarn run prettier --write .",
     "something-else:test": "yarn run prettier --list-different .",
 
-    "prettier:format": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs  --config src/prettier/.prettierrc.yml --write .",
-    "prettier:test": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs  --config src/prettier/.prettierrc.yml --check .",
+    "prettier:format": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs . --write",
+    "prettier:test": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs . --check"
   },
   "prettier": "@jeffsays/prettier"
 }

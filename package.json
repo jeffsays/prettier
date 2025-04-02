@@ -18,8 +18,7 @@
   },
   "exports": "./src/index.js",
   "files": [
-    "src/.prettierignore",
-    "src/.prettierrc.yml"
+    "src/.prettierignore"
   ],
   "keywords": [
     "prettier",
