@@ -2,7 +2,7 @@
   "name": "@jeffsays/prettier",
   "version": "0.0.3",
   "description": "My personal Prettier config",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeffsays/prettier.git"
@@ -16,7 +16,11 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "exports": "./index.js",
+  "exports": "./src/index.js",
+  "files": [
+    "src/.prettierignore",
+    "src/.prettierrc.yml"
+  ],
   "keywords": [
     "prettier",
     "prettier-config"
