@@ -20,7 +20,8 @@
     ".": "./src/prettier.config.ts"
   },
   "files": [
-    "src/.prettierignore"
+    "src/.prettierignore",
+    "src/prettier.config.ts"
   ],
   "keywords": [
     "prettier",
@@ -56,5 +57,8 @@
   "packageManager": "yarn@3.8.7",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
   }
 }
