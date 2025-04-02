@@ -7,9 +7,9 @@ export const config: Config = {
   jsdocCommentLineStrategy: "singleLine",
   jsdocVerticalAlignment: true,
   jsdocSeparateReturnsFromParam: true,
-  jsdocPrintWidth: 100,
+  jsdocPrintWidth: 120,
   jsdocLineWrappingStyle: "greedy",
-  tsdoc: true,
+  tsdoc: false,
   jsdocAddDefaultToDescription: true,
 };
 
