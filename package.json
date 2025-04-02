@@ -24,6 +24,7 @@
     "git:commit": "git add package.json .yarn/versions && git commit -m v${npm_package_version}",
     "git:push": "git push --follow-tags",
     "git:tag": "git tag -a v${npm_package_version} -m v${npm_package_version}",
+    "prettier:check": "yarn run prettier --check .",
     "prettier:format": "yarn run prettier --write .",
     "prettier:test": "yarn run prettier --list-different .",
     "publish": "yarn npm publish --access public",

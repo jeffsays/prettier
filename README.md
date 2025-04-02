@@ -41,8 +41,13 @@ Add to package.json:
 ```json
 {
   "scripts": {
-    "lint:check": "NODE_OPTIONS=\"--experimental-strip-types\" prettier --check .",
-    "lint:format": "NODE_OPTIONS=\"--experimental-strip-types\" prettier --config src/prettier/prettier.config.ts --write ."
+    "lint:check": "NODE_OPTIONS=\"--experimental-strip-types\" yarn run prettier --check .",
+    "lint:format": "NODE_OPTIONS=\"--experimental-strip-types\" yarn run prettier --config src/prettier/prettier.config.ts --write ."
+
+    "something-else:check": "yarn run prettier --check .",
+    "something-else:format": "yarn run prettier --write .",
+    "something-else:test": "yarn run prettier --list-different .",
+    
     "prettier:format": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs  --config src/prettier/.prettierrc.yml --write .",
     "prettier:test": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs  --config src/prettier/.prettierrc.yml --check .",
   },
