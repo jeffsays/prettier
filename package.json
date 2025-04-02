@@ -14,9 +14,11 @@
   "license": "MIT",
   "type": "module",
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=22.14.0"
   },
-  "exports": "./src/index.mjs",
+  "exports": {
+    ".": "./src/prettier.config.ts"
+  },
   "files": [
     "src/.prettierignore"
   ],
