@@ -20,6 +20,7 @@ const config: Config = {
   tabWidth: 2,
   trailingComma: "es5",
   useTabs: false,
+  organizeImportsSkipDestructiveCodeActions: true,
   overrides: [
     {
       files: ".github/workflows/*.yml",
@@ -29,7 +30,12 @@ const config: Config = {
       },
     },
   ],
-  plugins: ["prettier-plugin-packagejson"],
+  plugins: [
+    "prettier-plugin-curly",
+    "prettier-plugin-packagejson",
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-jsdoc",
+  ],
 };
 
 export default config;
