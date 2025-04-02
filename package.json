@@ -12,6 +12,9 @@
   },
   "author": "Jeff Beck",
   "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "keywords": [
     "prettier",
     "prettier-config"
@@ -35,14 +38,15 @@
     "version:prepatch": "yarn version --new-version prepatch",
     "version:prerelease": "yarn version ${npm_package_version}"
   },
-  "devDependencies": {
-    "prettier": "^3.4.2"
-  },
   "peerDependencies": {
     "prettier": ">=3.4.2"
   },
   "dependencies": {
+    "prettier": "^3.4.2",
     "yaml": "^2.7.0"
   },
-  "packageManager": "yarn@3.8.7"
+  "packageManager": "yarn@3.8.7",
+  "publishConfig": {
+    "access": "public"
+  }
 }
