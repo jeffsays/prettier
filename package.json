@@ -12,9 +12,11 @@
   },
   "author": "Jeff Beck",
   "license": "MIT",
+  "type": "module",
   "engines": {
     "node": ">=22.0.0"
   },
+  "exports": "./index.js",
   "keywords": [
     "prettier",
     "prettier-config"
@@ -40,10 +42,10 @@
     "version:prerelease": "yarn version ${npm_package_version}"
   },
   "peerDependencies": {
-    "prettier": ">=3.4.2"
+    "prettier": ">=3.5.3"
   },
   "dependencies": {
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.3",
     "yaml": "^2.7.0"
   },
   "packageManager": "yarn@3.8.7",

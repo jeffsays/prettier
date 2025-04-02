@@ -5,6 +5,7 @@
 My shared Prettier configuration
 
 # Usage
+
 ## Installation
 
 <details open><summary>yarn</summary>
@@ -34,7 +35,7 @@ pnpm add -D @jeffsays/prettier
 
 </details>
 
-## `package.json` 
+## `package.json`
 
 Add to package.json:
 
@@ -47,7 +48,7 @@ Add to package.json:
     "something-else:check": "yarn run prettier --check .",
     "something-else:format": "yarn run prettier --write .",
     "something-else:test": "yarn run prettier --list-different .",
-    
+
     "prettier:format": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs  --config src/prettier/.prettierrc.yml --write .",
     "prettier:test": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs  --config src/prettier/.prettierrc.yml --check .",
   },
