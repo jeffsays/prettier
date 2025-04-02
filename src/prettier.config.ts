@@ -13,7 +13,7 @@ const config: Config = {
   jsdocDescriptionTag: true,
   jsdocVerticalAlignment: true,
   jsdocSeparateReturnsFromParam: true,
-  jsdocPrintWidth: 60,
+  jsdocPrintWidth: 100,
   jsdocLineWrappingStyle: "greedy",
   objectWrap: "preserve",
   printWidth: 120,
