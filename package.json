@@ -16,7 +16,7 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "exports": "./src/index.js",
+  "exports": "./src/index.mjs",
   "files": [
     "src/.prettierignore"
   ],
