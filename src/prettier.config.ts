@@ -2,6 +2,7 @@ import { type Config } from "prettier";
 
 const config: Config = {
   arrowParens: "always",
+  braceStyle: "1tbs",
   bracketSameLine: false,
   bracketSpacing: true,
   editorconfig: true,
@@ -34,7 +35,9 @@ const config: Config = {
     "prettier-plugin-curly",
     "prettier-plugin-packagejson",
     "prettier-plugin-organize-imports",
+    "prettier-plugin-brace-style",
     "prettier-plugin-jsdoc",
+    "prettier-plugin-merge",
   ],
 };
 

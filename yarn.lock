@@ -293,8 +293,10 @@ __metadata:
   resolution: "@jeffsays/prettier@workspace:."
   dependencies:
     prettier: ^3.5.3
+    prettier-plugin-brace-style: ^0.7.2
     prettier-plugin-curly: ^0.3.1
     prettier-plugin-jsdoc: ^1.3.2
+    prettier-plugin-merge: ^0.7.3
     prettier-plugin-organize-imports: ^4.1.0
     prettier-plugin-packagejson: ^2.5.10
     tsx: ^4.19.3
@@ -302,6 +304,7 @@ __metadata:
     yaml: ^2.7.0
   peerDependencies:
     prettier: ">=3.5.3"
+    prettier-plugin-brace-style: ">=0.7.2"
     prettier-plugin-curly: ">=0.3.1"
     prettier-plugin-jsdoc: ">=1.3.2"
     prettier-plugin-organize-imports: ">=4.1.0"
@@ -602,6 +605,13 @@ __metadata:
   dependencies:
     dequal: ^2.0.0
   checksum: d2ff650bac0bb6ef08c48f3ba98640bb5fec5cce81e9957eb620408d1bab1204d382a45b785c6b3314dc867bb0684936b84c6867820da6db97cbb5d3c15dd185
+  languageName: node
+  linkType: hard
+
+"diff@npm:5.1.0":
+  version: 5.1.0
+  resolution: "diff@npm:5.1.0"
+  checksum: c7bf0df7c9bfbe1cf8a678fd1b2137c4fb11be117a67bc18a0e03ae75105e8533dbfb1cda6b46beb3586ef5aed22143ef9d70713977d5fb1f9114e21455fba90
   languageName: node
   linkType: hard
 
@@ -1437,6 +1447,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-plugin-brace-style@npm:^0.7.2":
+  version: 0.7.2
+  resolution: "prettier-plugin-brace-style@npm:0.7.2"
+  peerDependencies:
+    prettier: ^2 || ^3
+    prettier-plugin-astro: "*"
+    prettier-plugin-svelte: "*"
+  peerDependenciesMeta:
+    prettier-plugin-astro:
+      optional: true
+    prettier-plugin-svelte:
+      optional: true
+  checksum: 62490a70167149d1d08e52b8d1ed3b7aa561dd94c80eb965b893570f569054df0f308ebf345668ddcdab491f36e7733f16d3b37b2e4d34880c236cb4db21f8a7
+  languageName: node
+  linkType: hard
+
 "prettier-plugin-curly@npm:^0.3.1":
   version: 0.3.1
   resolution: "prettier-plugin-curly@npm:0.3.1"
@@ -1460,6 +1486,17 @@ __metadata:
   peerDependencies:
     prettier: ^3.0.0
   checksum: e8a7d49772721a71901a9c6843465d1ecbd4304c4f1d25ca5dea8fc9c6c3c4a9aacf6b291e198774ae9a48600aed97a3bc148e6691b5790f87cb2ca7a6685000
+  languageName: node
+  linkType: hard
+
+"prettier-plugin-merge@npm:^0.7.3":
+  version: 0.7.3
+  resolution: "prettier-plugin-merge@npm:0.7.3"
+  dependencies:
+    diff: 5.1.0
+  peerDependencies:
+    prettier: ^2 || ^3
+  checksum: 75b3f5e051cd940b425f6ad89b3b8ef7b85c60cd19a91f0dc109896687c7b9211e5987af8635fbce6ba2dbe2576af0eda8d58651a6a820f21f79baa4bd683940
   languageName: node
   linkType: hard
 
