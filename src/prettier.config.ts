@@ -28,6 +28,9 @@ const config: Config = {
         proseWrap: "preserve"
       }
     }
+  ],
+  plugins: [
+    "prettier-plugin-packagejson"
   ]
 }
 

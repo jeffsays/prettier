@@ -8,10 +8,12 @@ My shared Prettier configuration
 
 ## Installation
 
+This projects recommends using [tsx] to run prettier for typescript projects.
+
 <details open><summary>yarn</summary>
 
 ```shell
-yarn add --dev @jeffsays/prettier
+yarn add --dev @jeffsays/prettier tsx
 ```
 
 </details>
@@ -19,7 +21,7 @@ yarn add --dev @jeffsays/prettier
 <details open><summary>npm</summary>
 
 ```shell
-npm install --save-dev @jeffsays/prettier
+npm install --save-dev @jeffsays/prettier tsx
 ```
 
 </details>
@@ -27,11 +29,8 @@ npm install --save-dev @jeffsays/prettier
 <details open><summary>pnpm</summary>
 
 ```shell
-pnpm add -D @jeffsays/prettier
+pnpm add -D @jeffsays/prettier tsx
 ```
-
-[code-style]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
-[prettier]: https://github.com/prettier/prettier
 
 </details>
 
@@ -42,17 +41,15 @@ Add to package.json:
 ```json
 {
   "scripts": {
-    "lint:check": "NODE_OPTIONS=\"--experimental-strip-types\" yarn run prettier --check .",
-    "lint:format": "NODE_OPTIONS=\"--experimental-strip-types\" yarn run prettier --config src/prettier/prettier.config.ts --write ."
-
-    "something-else:check": "yarn run prettier --check .",
-    "something-else:format": "yarn run prettier --write .",
-    "something-else:test": "yarn run prettier --list-different .",
-
-    "prettier:format": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs . --write",
-    "prettier:test": "yarn run build && node --experimental-strip-types node_modules/prettier/bin/prettier.cjs . --check"
+    "prettier:check": "node --import tsx node_modules/prettier/bin/prettier.cjs . --check",
+    "prettier:list-different": "node --import tsx node_modules/prettier/bin/prettier.cjs . --list-different",
+    "prettier:write": "node --import tsx node_modules/prettier/bin/prettier.cjs . --write"
   },
   "prettier": "@jeffsays/prettier"
 }
 
 ```
+
+[code-style]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
+[prettier]: https://github.com/prettier/prettier
+[tsx]: https://tsx.is/
