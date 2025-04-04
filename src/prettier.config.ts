@@ -14,7 +14,7 @@ const config: Config = {
   arrowParens: "always",
   bracketSameLine: false,
   bracketSpacing: true,
-  editorconfig: true,
+  // editorconfig: true, // [warn] Ignored unknown option { editorconfig: true }.
   endOfLine: "lf",
   insertPragma: false,
   objectWrap: "preserve",
