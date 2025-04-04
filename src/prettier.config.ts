@@ -2,18 +2,15 @@ import { type Config } from "prettier";
 import jsdoc from "./jsdoc.plugin.ts";
 import braceStyle from "./braceStyle.plugin.ts";
 import experimentals from "./prettier.experimental.ts";
+import sh from "./sh.plugin.ts"
+import toml from "./toml.plugin.ts"
 
 /**
- * @description
- *
  * Shared prettier configuration
  *
  * @type Config
  */
 const config: Config = {
-  ...braceStyle,
-  ...experimentals,
-  ...jsdoc,
   arrowParens: "always",
   bracketSameLine: false,
   bracketSpacing: true,
@@ -48,7 +45,15 @@ const config: Config = {
     "prettier-plugin-brace-style",
     "prettier-plugin-jsdoc",
     "prettier-plugin-merge",
+    "prettier-plugin-sh",
+    "prettier-plugin-toml",
+    "prettier-plugin-tsconfig",
   ],
+  ...braceStyle,
+  ...experimentals,
+  ...jsdoc,
+  ...sh,
+  ...toml,
 };
 
 export default config;

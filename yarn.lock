@@ -80,7 +80,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.27.0":
+"@babel/types@npm:^7.11.0, @babel/types@npm:^7.27.0":
   version: 7.27.0
   resolution: "@babel/types@npm:7.27.0"
   dependencies:
@@ -299,6 +299,9 @@ __metadata:
     prettier-plugin-merge: ^0.7.3
     prettier-plugin-organize-imports: ^4.1.0
     prettier-plugin-packagejson: ^2.5.10
+    prettier-plugin-sh: ^0.16.0
+    prettier-plugin-toml: ^2.0.3
+    prettier-plugin-tsconfig: ^0.0.1
     tsx: ^4.19.3
     typescript: ^5.8.2
   peerDependencies:
@@ -309,6 +312,9 @@ __metadata:
     prettier-plugin-merge: ">=0.7.3"
     prettier-plugin-organize-imports: ">=4.1.0"
     prettier-plugin-packagejson: ">=2.5.10"
+    prettier-plugin-sh: ">=0.16.0"
+    prettier-plugin-toml: ">=2.0.3"
+    prettier-plugin-tsconfig: ">=0.0.1"
   languageName: unknown
   linkType: soft
 
@@ -387,6 +393,22 @@ __metadata:
   version: 0.1.2
   resolution: "@pkgr/core@npm:0.1.2"
   checksum: 5160ec9f2e3232da681824a42583ef80e637ae6143339bd1db176848efd244dd71d177ccb7fd729261d8dcaf88486ce701d39500d873ed5caf16e8c281e9e28a
+  languageName: node
+  linkType: hard
+
+"@taplo/core@npm:^0.1.0":
+  version: 0.1.1
+  resolution: "@taplo/core@npm:0.1.1"
+  checksum: 4673176900669a14e4d6a0900f7c5b6556b8275b85ab4541be517c150a95fe6b5883e7bf672f71d81488b723e3c115933cb5b36977d3dc0d8d75874495b52aaf
+  languageName: node
+  linkType: hard
+
+"@taplo/lib@npm:^0.4.0-alpha.2":
+  version: 0.4.0-alpha.2
+  resolution: "@taplo/lib@npm:0.4.0-alpha.2"
+  dependencies:
+    "@taplo/core": ^0.1.0
+  checksum: 891fbb433eed8f7faee33136d91352e79a82b1dad806369c2f796772a566afd08061d458d1a03464830c5d8df18517a5ff812c50dfe370786fab601f752702bc
   languageName: node
   linkType: hard
 
@@ -1364,6 +1386,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mvdan-sh@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "mvdan-sh@npm:0.10.1"
+  checksum: 32ac3ad9adb3370a2b98256f1cb80572e7a8bd27958d20c1856e0bf7c339ef3ab232a1547b7615aa670ee8e557702abfc04d7dd362f15cd86ce01bab65172b47
+  languageName: node
+  linkType: hard
+
 "negotiator@npm:^1.0.0":
   version: 1.0.0
   resolution: "negotiator@npm:1.0.0"
@@ -1529,6 +1558,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-plugin-sh@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "prettier-plugin-sh@npm:0.16.0"
+  dependencies:
+    mvdan-sh: ^0.10.1
+    sh-syntax: ^0.4.2
+  peerDependencies:
+    prettier: ^3.0.3
+  checksum: 2e8f99fb8c2bd1c565d695fe6c95d32bef7bd7c260f998f78b1245bbde7fdc780ca63b1fd3c3fe75d3732efb1672b84fdc4bd2b93dd547a5f7cc6d1d1c7c2729
+  languageName: node
+  linkType: hard
+
+"prettier-plugin-toml@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "prettier-plugin-toml@npm:2.0.3"
+  dependencies:
+    "@taplo/lib": ^0.4.0-alpha.2
+  peerDependencies:
+    prettier: ^3.0.3
+  checksum: 126d859b5dd0b92851b79fc4563e37764cf9bd748c263b5e062acd886cc14bacecd398e8dc563a1c84746e0271631bcc8fff75e178c08b862c41a779c9515a26
+  languageName: node
+  linkType: hard
+
+"prettier-plugin-tsconfig@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "prettier-plugin-tsconfig@npm:0.0.1"
+  dependencies:
+    "@babel/types": ^7.11.0
+  peerDependencies:
+    prettier: ^2.0.0
+  checksum: 63547566bdd985fbb5768938b4d365c915a6dcfe1bdde303685ac0260121ef59464b272ed7c03dffacc4cecf2949a3bbb14380000683107d21ffeb65626ecd95
+  languageName: node
+  linkType: hard
+
 "prettier@npm:^3.5.3":
   version: 3.5.3
   resolution: "prettier@npm:3.5.3"
@@ -1582,6 +1645,15 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 586b825d36874007c9382d9e1ad8f93888d8670040add24a28e06a910aeebd673a2eb9e3bf169c6679d9245e66efb9057e0852e70d9daa6c27372aab1dda7104
+  languageName: node
+  linkType: hard
+
+"sh-syntax@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "sh-syntax@npm:0.4.2"
+  dependencies:
+    tslib: ^2.6.2
+  checksum: 7302cc5e076c1e7373c095fe6367384f82cbf9a10a0c117ecebfa03d2c34ca6b5f4389b83ac29eaa2458f1e3dc017255fd5b755a09e89cbcb95187b70ce84ea7
   languageName: node
   linkType: hard
 

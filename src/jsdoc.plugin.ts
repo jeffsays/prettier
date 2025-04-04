@@ -1,7 +1,6 @@
-import { type Config } from "prettier";
-import { Options } from "prettier-plugin-jsdoc"
+import { Options } from "prettier-plugin-jsdoc";
 
-export const config: Options = {
+const config: Options = {
   jsdocSpaces: 1,
   jsdocDescriptionWithDot: false,
   jsdocDescriptionTag: false,
