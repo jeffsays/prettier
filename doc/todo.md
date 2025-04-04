@@ -11,4 +11,9 @@
 - [ ] https://www.npmjs.com/package/prettier-plugin-organize-imports
 - [ ] https://www.npmjs.com/package/@trivago/prettier-plugin-sort-imports
 - [ ] https://www.npmjs.com/package/@ianvs/prettier-plugin-sort-imports
+- [x] https://www.npmjs.com/package/@svgr/plugin-prettier
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 - [ ]
