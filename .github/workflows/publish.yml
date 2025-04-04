@@ -1,5 +1,4 @@
 name: Publish
-description: "Publish to NPM"
 on:
   push:
     tags:
