@@ -43,7 +43,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.25.8, @babel/parser@npm:^7.27.0":
+"@babel/parser@npm:^7.25.7, @babel/parser@npm:^7.25.8, @babel/parser@npm:^7.27.0":
   version: 7.27.0
   resolution: "@babel/parser@npm:7.27.0"
   dependencies:
@@ -292,6 +292,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@jeffsays/prettier@workspace:."
   dependencies:
+    "@svgr/plugin-prettier": ^8.1.0
     prettier: ^3.5.3
     prettier-plugin-brace-style: ^0.7.2
     prettier-plugin-curly: ^0.3.1
@@ -300,11 +301,13 @@ __metadata:
     prettier-plugin-organize-imports: ^4.1.0
     prettier-plugin-packagejson: ^2.5.10
     prettier-plugin-sh: ^0.16.0
+    prettier-plugin-sort-re-exports: ^0.1.0
     prettier-plugin-toml: ^2.0.3
     prettier-plugin-tsconfig: ^0.0.1
     tsx: ^4.19.3
     typescript: ^5.8.2
   peerDependencies:
+    "@svgr/plugin-prettier": ">=8.1.0"
     prettier: ">=3.5.3"
     prettier-plugin-brace-style: ">=0.7.2"
     prettier-plugin-curly: ">=0.3.1"
@@ -313,6 +316,7 @@ __metadata:
     prettier-plugin-organize-imports: ">=4.1.0"
     prettier-plugin-packagejson: ">=2.5.10"
     prettier-plugin-sh: ">=0.16.0"
+    prettier-plugin-sort-re-exports: ">=0.1.0"
     prettier-plugin-toml: ">=2.0.3"
     prettier-plugin-tsconfig: ">=0.0.1"
   languageName: unknown
@@ -393,6 +397,18 @@ __metadata:
   version: 0.1.2
   resolution: "@pkgr/core@npm:0.1.2"
   checksum: 5160ec9f2e3232da681824a42583ef80e637ae6143339bd1db176848efd244dd71d177ccb7fd729261d8dcaf88486ce701d39500d873ed5caf16e8c281e9e28a
+  languageName: node
+  linkType: hard
+
+"@svgr/plugin-prettier@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@svgr/plugin-prettier@npm:8.1.0"
+  dependencies:
+    deepmerge: ^4.3.1
+    prettier: ^2.8.7
+  peerDependencies:
+    "@svgr/core": "*"
+  checksum: 660bbfe63add9b855e8269411857f4b23ee3ed86b11ba16d7c1b704c47a934f267649587f9e0c7a3a0841b4ae70d8b844439f3f6c8d4df75efd9590ede0784f2
   languageName: node
   linkType: hard
 
@@ -597,6 +613,13 @@ __metadata:
   dependencies:
     character-entities: ^2.0.0
   checksum: 102970fde2d011f307d3789776e68defd75ba4ade1a34951affd1fabb86cd32026fd809f2658c2b600d839a57b6b6a84e2b3a45166d38c8625d66ca11cd702b8
+  languageName: node
+  linkType: hard
+
+"deepmerge@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "deepmerge@npm:4.3.1"
+  checksum: 2024c6a980a1b7128084170c4cf56b0fd58a63f2da1660dcfe977415f27b17dbe5888668b59d0b063753f3220719d5e400b7f113609489c90160bb9a5518d052
   languageName: node
   linkType: hard
 
@@ -1570,6 +1593,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-plugin-sort-re-exports@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "prettier-plugin-sort-re-exports@npm:0.1.0"
+  dependencies:
+    "@babel/parser": ^7.25.7
+  peerDependencies:
+    prettier: ^3
+  checksum: 277921e17ddf33d7d13ecd0e168277907741be0b85522dae40647d4964e7eb51d3d1bf33648dded854e520ef5c549d70aa08ea18ae073ecfbef1f8f1ff9bdd6e
+  languageName: node
+  linkType: hard
+
 "prettier-plugin-toml@npm:^2.0.3":
   version: 2.0.3
   resolution: "prettier-plugin-toml@npm:2.0.3"
@@ -1589,6 +1623,15 @@ __metadata:
   peerDependencies:
     prettier: ^2.0.0
   checksum: 63547566bdd985fbb5768938b4d365c915a6dcfe1bdde303685ac0260121ef59464b272ed7c03dffacc4cecf2949a3bbb14380000683107d21ffeb65626ecd95
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.8.7":
+  version: 2.8.8
+  resolution: "prettier@npm:2.8.8"
+  bin:
+    prettier: bin-prettier.js
+  checksum: b49e409431bf129dd89238d64299ba80717b57ff5a6d1c1a8b1a28b590d998a34e083fa13573bc732bb8d2305becb4c9a4407f8486c81fa7d55100eb08263cf8
   languageName: node
   linkType: hard
 

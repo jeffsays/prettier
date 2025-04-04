@@ -1,4 +1,4 @@
-import type { PrettierTaploOptions } from "prettier-plugin-toml"
+import type { PrettierTaploOptions } from "prettier-plugin-toml";
 
 const config: PrettierTaploOptions = {
   // 'Align consecutive entries vertically.'
@@ -25,7 +25,7 @@ const config: PrettierTaploOptions = {
   // Alphabetically reorder keys that are not separated by empty lines.
   reorderKeys: false, // default `false`
   // The maximum number of allowed blank lines between entries and tables.
-  allowedBlankLines: 1 // integer, default `1`
-}
+  allowedBlankLines: 1, // integer, default `1`
+};
 
 export default config;

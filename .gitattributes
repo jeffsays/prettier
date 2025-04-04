@@ -35,7 +35,6 @@
 /.yarn/releases/** binary
 /.yarn/plugins/** binary
 
-
 # Documents
 *.bibtex   text diff=bibtex
 *.doc      diff=astextplain

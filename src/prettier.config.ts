@@ -2,8 +2,8 @@ import { type Config } from "prettier";
 import jsdoc from "./jsdoc.plugin.ts";
 import braceStyle from "./braceStyle.plugin.ts";
 import experimentals from "./prettier.experimental.ts";
-import sh from "./sh.plugin.ts"
-import toml from "./toml.plugin.ts"
+import sh from "./sh.plugin.ts";
+import toml from "./toml.plugin.ts";
 
 /**
  * Shared prettier configuration
@@ -46,8 +46,10 @@ const config: Config = {
     "prettier-plugin-jsdoc",
     "prettier-plugin-merge",
     "prettier-plugin-sh",
+    "prettier-plugin-sort-re-exports",
     "prettier-plugin-toml",
     "prettier-plugin-tsconfig",
+    "@svgr/plugin-prettier",
   ],
   ...braceStyle,
   ...experimentals,
