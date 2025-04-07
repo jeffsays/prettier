@@ -14,6 +14,10 @@
 - [x] https://www.npmjs.com/package/@svgr/plugin-prettier
 - [ ] prettier-plugin-svelte
 - [ ] prettier-plugin-tailwindcss
+- [ ] https://github.com/saiichihashimoto/standard-configs/blob/main/packages/prettier-plugin-git/src/index.ts
+- [ ] https://github.com/saiichihashimoto/standard-configs/blob/main/packages/prettier-plugin-github/src/index.ts
+- [ ] https://github.com/saiichihashimoto/standard-configs/blob/main/packages/prettier-plugin-dependabot/src/index.ts
+- [ ]
 - [ ]
 - [ ]
 - [ ]

@@ -48,7 +48,6 @@ const config: Config = {
     "prettier-plugin-sh",
     "prettier-plugin-sort-re-exports",
     "prettier-plugin-toml",
-    "prettier-plugin-tsconfig",
     "@svgr/plugin-prettier",
   ],
   ...braceStyle,
