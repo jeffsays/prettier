@@ -62,6 +62,7 @@ const config: Config = {
     "@ianvs/prettier-plugin-sort-imports",
     "prettier-plugin-brace-style",
     "prettier-plugin-jsdoc",
+    "prettier-plugin-curly-and-jsdoc",
     "prettier-plugin-sh",
     "prettier-plugin-sort-re-exports",
     "@svgr/plugin-prettier",
