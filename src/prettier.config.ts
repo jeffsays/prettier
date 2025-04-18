@@ -8,6 +8,7 @@
 import braceStyle from "./braceStyle.plugin.ts";
 import ignored from "./ignored.plugin.ts";
 import jsdoc from "./jsdoc.plugin.ts";
+import multilineArrays from "./multiline-arrays.plugin.ts";
 import organizeImports from "./organize-imports.plugin.ts";
 import experimentals from "./prettier.experimental.ts";
 import sh from "./sh.plugin.ts";
@@ -74,6 +75,7 @@ const config: Config = {
   ...jsdoc,
   ...sh,
   ...toml,
+  ...multilineArrays,
   ...organizeImports,
   ...sortImports,
   ...ignored,
