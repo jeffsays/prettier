@@ -1,8 +1,8 @@
 /**
  * @file - experimental prettier settings
+ * @author - Jeff Beck
  * @ref https://www.npmjs.com/package/prettier
  * @ref https://github.com/prettier/prettier
- * @author - Jeff Beck
  */
 
 import { type Config } from "prettier";

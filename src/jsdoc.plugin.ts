@@ -1,8 +1,8 @@
 /**
  * @file - configuration for "prettier-plugin-jsdoc"
+ * @author - Jeff Beck
  * @ref https://www.npmjs.com/package/prettier-plugin-jsdoc
  * @ref https://github.com/hosseinmd/prettier-plugin-jsdoc
- * @author - Jeff Beck
  */
 
 import type { Options } from "prettier-plugin-jsdoc";

@@ -1,15 +1,15 @@
 /**
  * @file - shared configuration for prettier
+ * @author - Jeff Beck
  * @ref https://www.npmjs.com/package/prettier
  * @ref https://github.com/prettier/prettier
- * @author - Jeff Beck
  */
 
 import braceStyle from "./braceStyle.plugin.ts";
+import ignored from "./ignored.plugin.ts";
 import jsdoc from "./jsdoc.plugin.ts";
 import organizeImports from "./organize-imports.plugin.ts";
 import experimentals from "./prettier.experimental.ts";
-import ignored from "./ignored.plugin.ts";
 import sh from "./sh.plugin.ts";
 import sortImports from "./sort-imports.plugin.ts";
 import toml from "./toml.plugin.ts";
@@ -49,9 +49,9 @@ const config: Config = {
     {
       files: "src/.prettierignore",
       options: {
-        parser: "less"
-      }
-    }
+        parser: "less",
+      },
+    },
   ],
   plugins: [
     "prettier-plugin-curly",

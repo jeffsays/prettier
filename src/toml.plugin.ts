@@ -1,9 +1,9 @@
 /**
  * @file - shared configuration for "prettier-plugin-toml"
+ * @author - Jeff Beck
  * @ref https://www.npmjs.com/package/prettier-plugin-toml
  * @ref https://github.com/un-ts/prettier
  * @ref https://github.com/un-ts/prettier/tree/master/packages/toml
- * @author - Jeff Beck
  */
 
 import type { PrettierTaploOptions } from "prettier-plugin-toml";

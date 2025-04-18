@@ -1,8 +1,8 @@
 /**
  * @file - configuration for "prettier-plugin-curly"
+ * @author - Jeff Beck
  * @ref https://www.npmjs.com/package/prettier-plugin-curly
  * @ref https://github.com/JoshuaKGoldberg/prettier-plugin-curly
- * @author - Jeff Beck
  */
 
 import { type Config } from "prettier";
