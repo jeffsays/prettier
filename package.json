@@ -33,9 +33,9 @@
     "git:commit": "git add package.json .yarn/versions && git commit -m v${npm_package_version}",
     "git:push": "git push --follow-tags",
     "git:tag": "git tag -a v${npm_package_version} -m v${npm_package_version}",
-    "prettier:check": "node --import tsx node_modules/prettier/bin/prettier.cjs --config src/prettier.config.ts . --check",
-    "prettier:list-different": "node --import tsx node_modules/prettier/bin/prettier.cjs --config src/prettier.config.ts . --list-different",
-    "prettier:write": "node --import tsx node_modules/prettier/bin/prettier.cjs --config src/prettier.config.ts . --write",
+    "prettier:check": "node --import tsx node_modules/prettier/bin/prettier.cjs --config src/prettier.config.ts --ignore-path src/.prettierignore . --check",
+    "prettier:list-different": "node --import tsx node_modules/prettier/bin/prettier.cjs --config src/prettier.config.ts --ignore-path src/.prettierignore . --list-different",
+    "prettier:write": "node --import tsx node_modules/prettier/bin/prettier.cjs --config src/prettier.config.ts --ignore-path src/.prettierignore . --write",
     "publish": "yarn npm publish --access public",
     "publish:major": "yarn version major && yarn publish:sync",
     "publish:minor": "yarn version minor && yarn publish:sync",
@@ -49,23 +49,25 @@
     "version:prerelease": "yarn version ${npm_package_version}"
   },
   "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@svgr/plugin-prettier": "^8.1.0",
     "prettier": "^3.5.3",
     "prettier-plugin-brace-style": "^0.7.2",
-    "prettier-plugin-curly": "^0.3.1",
+    "prettier-plugin-curly": "^0.3.2",
     "prettier-plugin-jsdoc": "^1.3.2",
     "prettier-plugin-merge": "^0.7.3",
     "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-packagejson": "^2.5.10",
-    "prettier-plugin-sh": "^0.16.0",
+    "prettier-plugin-sh": "^0.17.2",
     "prettier-plugin-sort-re-exports": "^0.1.0",
-    "prettier-plugin-toml": "^2.0.3"
+    "prettier-plugin-toml": "^2.0.4"
   },
   "devDependencies": {
     "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@svgr/plugin-prettier": ">8.1.0",
     "prettier": ">3.5.3",
     "prettier-plugin-brace-style": ">0.7.2",
@@ -80,7 +82,7 @@
   },
   "packageManager": "yarn@3.8.7",
   "engines": {
-    "node": ">=22.14.0"
+    "node": ">=23.11.0"
   },
   "publishConfig": {
     "access": "public"
