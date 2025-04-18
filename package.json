@@ -27,7 +27,8 @@
   "main": "src/prettier.config.ts",
   "files": [
     "src/.prettierignore",
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "src/prettier-watchers-unix.xml"
   ],
   "scripts": {
     "git:commit": "git add package.json .yarn/versions && git commit -m v${npm_package_version}",
