@@ -34,5 +34,5 @@ jobs:
         run: yarn install --immutable
         shell: bash
       - name: list-different
-        run: yarn prettier:test
+        run: yarn prettier:list-different
         shell: bash
