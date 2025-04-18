@@ -9,6 +9,7 @@ import braceStyle from "./braceStyle.plugin.ts";
 import jsdoc from "./jsdoc.plugin.ts";
 import organizeImports from "./organize-imports.plugin.ts";
 import experimentals from "./prettier.experimental.ts";
+import ignored from "./ignored.plugin.ts";
 import sh from "./sh.plugin.ts";
 import sortImports from "./sort-imports.plugin.ts";
 import toml from "./toml.plugin.ts";
@@ -63,6 +64,7 @@ const config: Config = {
     "prettier-plugin-sort-re-exports",
     "prettier-plugin-toml",
     "@svgr/plugin-prettier",
+    "prettier-plugin-ignored",
     "prettier-plugin-merge" /* keep this plugin last */,
   ],
   ...braceStyle,
@@ -72,6 +74,7 @@ const config: Config = {
   ...toml,
   ...organizeImports,
   ...sortImports,
+  ...ignored,
 };
 
 export default config;

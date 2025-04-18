@@ -316,6 +316,7 @@ __metadata:
     prettier: ^3.5.3
     prettier-plugin-brace-style: ^0.7.2
     prettier-plugin-curly: ^0.3.2
+    prettier-plugin-ignored: ^1.0.0
     prettier-plugin-jsdoc: ^1.3.2
     prettier-plugin-merge: ^0.7.3
     prettier-plugin-organize-imports: ^4.1.0
@@ -327,17 +328,18 @@ __metadata:
     typescript: ^5.8.3
   peerDependencies:
     "@ianvs/prettier-plugin-sort-imports": ^4.4.1
-    "@svgr/plugin-prettier": ">8.1.0"
-    prettier: ">3.5.3"
-    prettier-plugin-brace-style: ">0.7.2"
-    prettier-plugin-curly: ">0.3.1"
-    prettier-plugin-jsdoc: ">1.3.2"
-    prettier-plugin-merge: ">0.7.3"
-    prettier-plugin-organize-imports: ">4.1.0"
-    prettier-plugin-packagejson: ">2.5.10"
-    prettier-plugin-sh: ">0.16.0"
-    prettier-plugin-sort-re-exports: ">0.1.0"
-    prettier-plugin-toml: ">2.0.3"
+    "@svgr/plugin-prettier": ^8.1.0
+    prettier: ^3.5.3
+    prettier-plugin-brace-style: ^0.7.2
+    prettier-plugin-curly: ^0.3.2
+    prettier-plugin-ignored: ^1.0.0
+    prettier-plugin-jsdoc: ^1.3.2
+    prettier-plugin-merge: ^0.7.3
+    prettier-plugin-organize-imports: ^4.1.0
+    prettier-plugin-packagejson: ^2.5.10
+    prettier-plugin-sh: ^0.17.2
+    prettier-plugin-sort-re-exports: ^0.1.0
+    prettier-plugin-toml: ^2.0.4
   languageName: unknown
   linkType: soft
 
@@ -1547,6 +1549,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-plugin-ignored@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "prettier-plugin-ignored@npm:1.0.0"
+  dependencies:
+    prettier: ^3.0.0
+  peerDependencies:
+    prettier: 3.x
+  checksum: 6583f0bddad31034a11026dfea1238fee36811b0bf9872cc2da9ac3ba9d8aad0098107c3b64a5bdab895aedcc8f4f2d54e94c0393517c30a59c750177213055b
+  languageName: node
+  linkType: hard
+
 "prettier-plugin-jsdoc@npm:^1.3.2":
   version: 1.3.2
   resolution: "prettier-plugin-jsdoc@npm:1.3.2"
@@ -1643,7 +1656,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.5.3":
+"prettier@npm:^3.0.0, prettier@npm:^3.5.3":
   version: 3.5.3
   resolution: "prettier@npm:3.5.3"
   bin:

@@ -83,7 +83,7 @@ const printerOptions = {
    * The next major version, v4, will remove this feature entirely.
    * See: https://github.com/mvdan/sh/issues/658
    */
-  keepPadding: false,
+  // keepPadding: false,
   /**
    * Minify will print programs in a way to save the most bytes possible. For example, indentation and comments are
    * skipped, and extra whitespace is avoided when possible.
