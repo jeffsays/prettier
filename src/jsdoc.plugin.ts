@@ -8,18 +8,18 @@
 import type { Options } from "prettier-plugin-jsdoc";
 
 const config: Options = {
-  jsdocSpaces: 1,
-  jsdocDescriptionWithDot: false,
-  jsdocDescriptionTag: false,
+  jsdocSpaces: 2,
+  jsdocDescriptionWithDot: true,
+  jsdocDescriptionTag: true,
   jsdocVerticalAlignment: true,
   jsdocKeepUnParseAbleExampleIndent: true,
-  jsdocCommentLineStrategy: "singleLine",
-  jsdocCapitalizeDescription: false,
+  jsdocCommentLineStrategy: "keep",
+  jsdocCapitalizeDescription: true,
   jsdocSeparateReturnsFromParam: true,
   jsdocSeparateTagGroups: false,
   jsdocPreferCodeFences: true,
   tsdoc: true,
-  jsdocPrintWidth: 120,
+  jsdocPrintWidth: 100,
   jsdocLineWrappingStyle: "greedy",
   jsdocAddDefaultToDescription: true,
 };
