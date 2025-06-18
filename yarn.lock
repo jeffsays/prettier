@@ -316,9 +316,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ianvs/prettier-plugin-sort-imports@npm:^4.4.1":
-  version: 4.4.1
-  resolution: "@ianvs/prettier-plugin-sort-imports@npm:4.4.1"
+"@ianvs/prettier-plugin-sort-imports@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "@ianvs/prettier-plugin-sort-imports@npm:4.4.2"
   dependencies:
     "@babel/generator": ^7.26.2
     "@babel/parser": ^7.26.2
@@ -327,11 +327,11 @@ __metadata:
     semver: ^7.5.2
   peerDependencies:
     "@vue/compiler-sfc": 2.7.x || 3.x
-    prettier: 2 || 3
+    prettier: 2 || 3 || ^4.0.0-0
   peerDependenciesMeta:
     "@vue/compiler-sfc":
       optional: true
-  checksum: 6c1b3ec72f25def30d3f91178fb1f64553a45e5bc197e25443c3421caabce536c380758788629e818684eccc32e984ef9d3ebcd98e748a6c2b1eb892c52068ed
+  checksum: 28982e1e20fae94368dae4cd6fa4e5d54ca1040652c6a3b3ec2612028d3053955d82b03abcc00076b72485b4e0c839f469aa0f7ded73e95fb2c7393c23fb9f2d
   languageName: node
   linkType: hard
 
@@ -362,22 +362,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@jeffsays/prettier@workspace:."
   dependencies:
-    "@ianvs/prettier-plugin-sort-imports": ^4.4.1
+    "@ianvs/prettier-plugin-sort-imports": ^4.4.2
     "@svgr/plugin-prettier": ^8.1.0
     prettier: ^3.5.3
-    prettier-plugin-brace-style: ^0.7.2
+    prettier-plugin-brace-style: ^0.7.3
     prettier-plugin-curly: ^0.3.2
-    prettier-plugin-curly-and-jsdoc: ^3.1.0
+    prettier-plugin-curly-and-jsdoc: ^3.3.2
     prettier-plugin-ignored: ^1.0.0
     prettier-plugin-jsdoc: ^1.3.2
-    prettier-plugin-merge: ^0.7.3
+    prettier-plugin-merge: ^0.7.4
     prettier-plugin-multiline-arrays: ^4.0.3
     prettier-plugin-organize-imports: ^4.1.0
-    prettier-plugin-packagejson: ^2.5.10
-    prettier-plugin-sh: ^0.17.2
+    prettier-plugin-packagejson: ^2.5.15
+    prettier-plugin-sh: ^0.17.4
     prettier-plugin-sort-re-exports: ^0.1.0
-    prettier-plugin-toml: ^2.0.4
-    tsx: ^4.19.3
+    prettier-plugin-toml: ^2.0.5
+    tsx: ^4.20.3
     typescript: ^5.8.3
   peerDependencies:
     "@ianvs/prettier-plugin-sort-imports": ^4.4.1
@@ -469,17 +469,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pkgr/core@npm:^0.1.0":
-  version: 0.1.2
-  resolution: "@pkgr/core@npm:0.1.2"
-  checksum: 5160ec9f2e3232da681824a42583ef80e637ae6143339bd1db176848efd244dd71d177ccb7fd729261d8dcaf88486ce701d39500d873ed5caf16e8c281e9e28a
+"@pkgr/core@npm:^0.2.4":
+  version: 0.2.7
+  resolution: "@pkgr/core@npm:0.2.7"
+  checksum: b16959878940f3d3016b79a4b2c23fd518aaec6b47295baa3154fbcf6574fee644c51023bb69069fa3ea9cdcaca40432818f54695f11acc0ae326cf56676e4d1
   languageName: node
   linkType: hard
 
-"@reteps/dockerfmt@npm:^0.3.2":
-  version: 0.3.5
-  resolution: "@reteps/dockerfmt@npm:0.3.5"
-  checksum: b5f1800054d07d0806adbf5e27a4bbf5cab1b7b13b75b682827191fab8c1c4d85ab306242c99e58bdecf3f6237ece5ee0aca15b59f42a6acc69dd7329e60a717
+"@reteps/dockerfmt@npm:^0.3.5":
+  version: 0.3.6
+  resolution: "@reteps/dockerfmt@npm:0.3.6"
+  checksum: 701b908e1d89d4657c24eaf54d26842de5817c2261e4634d55285676d232d338429075c8e072bcfad157412a8e7ad94e318fe3833e1e928d68a9eee3714afc64
   languageName: node
   linkType: hard
 
@@ -741,7 +741,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-newline@npm:^4.0.0":
+"detect-newline@npm:^4.0.1":
   version: 4.0.1
   resolution: "detect-newline@npm:4.0.1"
   checksum: 0409ecdfb93419591ccff24fccfe2ddddad29b66637d1ed898872125b25af05014fdeedc9306339577060f69f59fe6e9830cdd80948597f136dfbffefa60599c
@@ -958,13 +958,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-stdin@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "get-stdin@npm:9.0.0"
-  checksum: 5972bc34d05932b45512c8e2d67b040f1c1ca8afb95c56cbc480985f2d761b7e37fe90dc8abd22527f062cc5639a6930ff346e9952ae4c11a2d4275869459594
-  languageName: node
-  linkType: hard
-
 "get-tsconfig@npm:^4.7.5":
   version: 4.10.0
   resolution: "get-tsconfig@npm:4.10.0"
@@ -974,10 +967,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"git-hooks-list@npm:^3.0.0":
-  version: 3.2.0
-  resolution: "git-hooks-list@npm:3.2.0"
-  checksum: 1bc1ecd9d68c56523e96109581a7e8d2cfefc9320171dff67b0010dcc3611deff9ea32720f3eb65abfc4ba971372658f5dd118d7de458161939ba88ac8824f4f
+"git-hooks-list@npm:^4.0.0":
+  version: 4.1.1
+  resolution: "git-hooks-list@npm:4.1.1"
+  checksum: a56c8cc3dab505bde2c6de032164a9113968ab7f249dfe2c9f2f23be872165f88c91e097994e009d31e56dd1e81c1f714d0972133314d8d3c6bd92a847ba562f
   languageName: node
   linkType: hard
 
@@ -1619,9 +1612,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-brace-style@npm:^0.7.2":
-  version: 0.7.2
-  resolution: "prettier-plugin-brace-style@npm:0.7.2"
+"prettier-plugin-brace-style@npm:^0.7.3":
+  version: 0.7.3
+  resolution: "prettier-plugin-brace-style@npm:0.7.3"
   peerDependencies:
     prettier: ^2 || ^3
     prettier-plugin-astro: "*"
@@ -1631,16 +1624,16 @@ __metadata:
       optional: true
     prettier-plugin-svelte:
       optional: true
-  checksum: 62490a70167149d1d08e52b8d1ed3b7aa561dd94c80eb965b893570f569054df0f308ebf345668ddcdab491f36e7733f16d3b37b2e4d34880c236cb4db21f8a7
+  checksum: 664f2e077507c3af1ac399571c380c2df89313da484795708ea70a915a35949a7c9c8a83e94a442b476d26ad212f36a80a5c9ecfb8bd93697bfa0c0ae2bf3681
   languageName: node
   linkType: hard
 
-"prettier-plugin-curly-and-jsdoc@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "prettier-plugin-curly-and-jsdoc@npm:3.1.0"
+"prettier-plugin-curly-and-jsdoc@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "prettier-plugin-curly-and-jsdoc@npm:3.3.2"
   peerDependencies:
     prettier: ^3.0.0
-  checksum: 96874df18d7a69af3377825bd436fd16748b86ef3e1660774623d33d5c234d39bfd93a078abd3c378adfc307d25c9af0e1126711f6828335fb24520418556e64
+  checksum: 09f9ca6ea5f77cb6943f551619be281267f3e941fe7dcb370df0d45a8f3fd5bd1deaa3d5bf417f548fd918e1f26338bfb8ab0331227827e17e75bb0595c11c3e
   languageName: node
   linkType: hard
 
@@ -1681,14 +1674,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-merge@npm:^0.7.3":
-  version: 0.7.3
-  resolution: "prettier-plugin-merge@npm:0.7.3"
+"prettier-plugin-merge@npm:^0.7.4":
+  version: 0.7.4
+  resolution: "prettier-plugin-merge@npm:0.7.4"
   dependencies:
     diff: 5.1.0
   peerDependencies:
     prettier: ^2 || ^3
-  checksum: 75b3f5e051cd940b425f6ad89b3b8ef7b85c60cd19a91f0dc109896687c7b9211e5987af8635fbce6ba2dbe2576af0eda8d58651a6a820f21f79baa4bd683940
+  checksum: 188899e14b29a3e7a6efd125236ec9bc2a4feac9d0eb06d869566b6d79bfb8dff9fe75d5d649639895b7356f525e38b0b8de5b1de8063f0979649119087f0593
   languageName: node
   linkType: hard
 
@@ -1718,30 +1711,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-packagejson@npm:^2.5.10":
-  version: 2.5.10
-  resolution: "prettier-plugin-packagejson@npm:2.5.10"
+"prettier-plugin-packagejson@npm:^2.5.15":
+  version: 2.5.15
+  resolution: "prettier-plugin-packagejson@npm:2.5.15"
   dependencies:
-    sort-package-json: 2.15.1
-    synckit: 0.9.2
+    sort-package-json: 3.2.1
+    synckit: 0.11.8
   peerDependencies:
     prettier: ">= 1.16.0"
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: 24192855a3bab72125e61a987e944301ac86cbc905f3d172a0cb954548b1f1802f821efef78afc396766f866e573692a391665e606b03dcd6ac00b5f17f68bd2
+  checksum: f19814ac31df19dcc8acdba85088fe3c023116a96c75091e7877a4d6f23e1d909df4d467fda1895676b608df3670663dc1967d742880a5f3a5b177dd0d3b5b06
   languageName: node
   linkType: hard
 
-"prettier-plugin-sh@npm:^0.17.2":
-  version: 0.17.2
-  resolution: "prettier-plugin-sh@npm:0.17.2"
+"prettier-plugin-sh@npm:^0.17.4":
+  version: 0.17.4
+  resolution: "prettier-plugin-sh@npm:0.17.4"
   dependencies:
-    "@reteps/dockerfmt": ^0.3.2
+    "@reteps/dockerfmt": ^0.3.5
     sh-syntax: ^0.5.6
   peerDependencies:
     prettier: ^3.0.3
-  checksum: 378a165eaafca9a303eab303b82c7687c4dc8516f3b12cf8749da9de35acd2d62e658f9a97332626b49bb7197299d2848ad98e53957d40f79f48d16654984c09
+  checksum: 29af62cdb8f95b509b8e2af1e51bcaafc0bdf17bec01903b8579c49de5b0135268903a45cfb008abb565af7e10192cb0a4573160f124aa33e26fd19befbf0e80
   languageName: node
   linkType: hard
 
@@ -1756,14 +1749,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-toml@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "prettier-plugin-toml@npm:2.0.4"
+"prettier-plugin-toml@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "prettier-plugin-toml@npm:2.0.5"
   dependencies:
     "@taplo/lib": ^0.5.0
   peerDependencies:
     prettier: ^3.0.3
-  checksum: c684801bd290846bba134eb000a65b4354640c2da6892a4456a5c24f66c006ab48b6c84ee254fb27117a2f122d9218fcb3f883cfad6112ec8c37613e67688707
+  checksum: 17b8936d5a5fb1bcd87cb2bdbaf3d4a4c539c2bcefabcdfdb7025db91496579e7985f7bfe9acaa2a1757f977ec420e0de3d8d3f1cf689d41143d6cff946d4b22
   languageName: node
   linkType: hard
 
@@ -1833,12 +1826,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.5.2, semver@npm:^7.6.0":
+"semver@npm:^7.3.5, semver@npm:^7.5.2":
   version: 7.7.1
   resolution: "semver@npm:7.7.1"
   bin:
     semver: bin/semver.js
   checksum: 586b825d36874007c9382d9e1ad8f93888d8670040add24a28e06a910aeebd673a2eb9e3bf169c6679d9245e66efb9057e0852e70d9daa6c27372aab1dda7104
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.7.1":
+  version: 7.7.2
+  resolution: "semver@npm:7.7.2"
+  bin:
+    semver: bin/semver.js
+  checksum: dd94ba8f1cbc903d8eeb4dd8bf19f46b3deb14262b6717d0de3c804b594058ae785ef2e4b46c5c3b58733c99c83339068203002f9e37cfe44f7e2cc5e3d2f621
   languageName: node
   linkType: hard
 
@@ -1909,21 +1911,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sort-package-json@npm:2.15.1":
-  version: 2.15.1
-  resolution: "sort-package-json@npm:2.15.1"
+"sort-package-json@npm:3.2.1":
+  version: 3.2.1
+  resolution: "sort-package-json@npm:3.2.1"
   dependencies:
     detect-indent: ^7.0.1
-    detect-newline: ^4.0.0
-    get-stdin: ^9.0.0
-    git-hooks-list: ^3.0.0
+    detect-newline: ^4.0.1
+    git-hooks-list: ^4.0.0
     is-plain-obj: ^4.1.0
-    semver: ^7.6.0
+    semver: ^7.7.1
     sort-object-keys: ^1.1.3
-    tinyglobby: ^0.2.9
+    tinyglobby: ^0.2.12
   bin:
     sort-package-json: cli.js
-  checksum: 2d612da6bc597da4552d6006cfe769a0f745b4a32da848dbdb606aa42b599ca670519aa9f07d388a2a41e92f310e936e2a9e406904599bf86c1cb279488572c0
+  checksum: 205cd80020e35d1f5a01f7a3c3ae540f9c90dedc0d41189fa44466d8ee687fc1efbd22be5f569a71c37810f671352bf2eb6b138604d71b4d452b19298fbaeb63
   languageName: node
   linkType: hard
 
@@ -1983,13 +1984,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"synckit@npm:0.9.2":
-  version: 0.9.2
-  resolution: "synckit@npm:0.9.2"
+"synckit@npm:0.11.8":
+  version: 0.11.8
+  resolution: "synckit@npm:0.11.8"
   dependencies:
-    "@pkgr/core": ^0.1.0
-    tslib: ^2.6.2
-  checksum: 3a30e828efbdcf3b50fccab4da6e90ea7ca24d8c5c2ad3ffe98e07d7c492df121e0f75227c6e510f96f976aae76f1fa4710cb7b1d69db881caf66ef9de89360e
+    "@pkgr/core": ^0.2.4
+  checksum: dd7193736e0b5eb209192e280649b98b539537bf23bef20c8a2b24cd12ccde47bcf4e77773ff9cb66c35960d2cb41e28c05e0b19124488abbfb6423258b56275
   languageName: node
   linkType: hard
 
@@ -2007,7 +2007,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.9":
+"tinyglobby@npm:^0.2.12":
   version: 0.2.12
   resolution: "tinyglobby@npm:0.2.12"
   dependencies:
@@ -2017,16 +2017,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.6.2, tslib@npm:^2.8.1":
+"tslib@npm:^2.8.1":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: e4aba30e632b8c8902b47587fd13345e2827fa639e7c3121074d5ee0880723282411a8838f830b55100cbe4517672f84a2472667d355b81e8af165a55dc6203a
   languageName: node
   linkType: hard
 
-"tsx@npm:^4.19.3":
-  version: 4.19.3
-  resolution: "tsx@npm:4.19.3"
+"tsx@npm:^4.20.3":
+  version: 4.20.3
+  resolution: "tsx@npm:4.20.3"
   dependencies:
     esbuild: ~0.25.0
     fsevents: ~2.3.3
@@ -2036,7 +2036,7 @@ __metadata:
       optional: true
   bin:
     tsx: dist/cli.mjs
-  checksum: 51bd7fb7c234f32bc866208f8ec0eef0208bfb998ba58d68f4ccb6cec49fd34deeee895c16d8ff15c870beda905ca9e4844e6729e22b47e6943f80fe9322f0b8
+  checksum: 1d13d3168d9ea44b0d02a7df16cc39be8bf4c6c309768009f392ce54e8767402d1f2d13e8dd79d0d77ef4e8a61d96ea7bad12ab1d46f1a4dadf74c4b849d798e
   languageName: node
   linkType: hard
 
